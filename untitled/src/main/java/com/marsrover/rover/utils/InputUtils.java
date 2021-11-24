@@ -1,7 +1,7 @@
 package com.marsrover.rover.utils;
 
-import com.marsrover.rover.error.BadRequestException;
-import com.marsrover.rover.rover.Coordinates;
+import com.marsrover.rover.domain.entity.Coordinates;
+import com.marsrover.rover.exception.BadRequestException;
 
 
 public class InputUtils {

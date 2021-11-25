@@ -1,9 +1,11 @@
 Application to retrieve final Rover coordinates given some initial hints.
 
-1. First of all we will need to compile the application.
+1. Compile the application.
         Run mvn command on pom project directory: mvn clean install
-2. Second we will need to run the docker image.
-        Run docker command: docker run -p8887:8888 message-server:RoverFinal
+2. Build the docker the docker image.
+        Run docker command: docker build --tag=message-server:latest
+3. Run the application.
+        Run docker command: docker run -8080:8080 message-server:latest
 
 H2 database console is available at:
 http://{host}/h2-console
@@ -13,7 +15,7 @@ JDBC URL: jdbc:h2:mem:mydb
 User name: sa
 Password: password
 
-Swagger UI is available at (only deploying the application on IDE):
+Swagger UI is available at (only deploying the application from IDE):
 http://{host}/swagger-ui/
 
 Endpoint available:
